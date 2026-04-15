@@ -59,8 +59,7 @@ Outside technology, I enjoy football, creative challenges, and learning experien
   <img src="https://skillicons.dev/icons?i=html,css,react,tailwind,figma" />
 </p>
 
-
-  <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png" alt="JavaFX Logo" height="50" style="vertical-align: middle; margin-right: 5px;" />
+  <img src="./assets/images/JavaFX_Logo.png" alt="JavaFX Logo" height="42" />
   
 ### <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="24"> Databases
 <p align="left">
@@ -68,8 +67,8 @@ Outside technology, I enjoy football, creative challenges, and learning experien
 </p>
 
 <p align="left">
-  <img src="https://img.shields.io/badge/MySQL%20Workbench-00758F?style=for-the-badge&logo=mysql&logoColor=white">
-  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white">
+  <img src="./assets/images/MySQL_workbench.png" height="42" alt="MySQL Workbench" />
+  <img src="./assets/images/SQL_server.png" height="42" alt="SQL Server" />
 </p>
 
 ### <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="24"> Tools & Technologies
@@ -78,9 +77,9 @@ Outside technology, I enjoy football, creative challenges, and learning experien
 </p>
 
 <p align="left">
-  <img src="https://img.shields.io/badge/GitHub%20Desktop-8034A9?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/StarUML-1F6FEB?style=for-the-badge">
-  <img src="https://img.shields.io/badge/AI%20Assisted%20Workflows-5B21B6?style=for-the-badge">
+  <img src="./assets/images/GitHub_desktop.png" height="42" alt="GitHub Desktop" />
+  <img src="./assets/images/Star_UML.png" height="42" alt="StarUML" />
+  <img src="./assets/images/AI_assistant.png" height="42" alt="AI Assisted Workflows" />
 </p>
 
 ### <img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="24"> IDEs & Development Environments
@@ -89,7 +88,7 @@ Outside technology, I enjoy football, creative challenges, and learning experien
 </p>
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Windsurf-0B1021?style=for-the-badge">
+  <img src="./assets/images/Windsurf.png" height="42" alt="Windsurf" />
 </p>
 
 ### <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="24"> Operating Systems
@@ -133,10 +132,10 @@ I contributed to the development of an academic ERP-style management system for 
 ## <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="30"> GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Richard117297&show_icons=true&theme=tokyonight&hide_border=true" height="180" alt="GitHub stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Richard117297&layout=compact&theme=tokyonight&hide_border=true" height="180" alt="Top languages"/>
+  <img src="./assets/generated/stats.svg" height="180" alt="GitHub stats" />
+  <img src="./assets/generated/top-langs.svg" height="180" alt="Top languages" />
   <br><br>
-  <img src="https://streak-stats.demolab.com?user=Richard117297&theme=tokyonight&hide_border=true" alt="GitHub streak"/>
+  <img src="https://streak-stats.demolab.com?user=Richard117297&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </div>
 
 ---
