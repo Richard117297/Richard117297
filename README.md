@@ -98,12 +98,19 @@ Outside technology, I enjoy football, creative challenges, and learning experien
 
 ---
 
-## <img src="https://media.giphy.com/media/fwbZnTftCXVocKzfxR/giphy.gif" width="30"> Featured Contribution
+## <img src="https://media.giphy.com/media/fwbZnTftCXVocKzfxR/giphy.gif" width="30"> Featured Projects & Contributions
+
+### StaffTrain
+**Repository:** [StaffTrain](https://github.com/Richard117297/StaffTrain)
+
+I developed StaffTrain as an academic desktop application for passenger train management, focused on combining clean interface design, structured system logic, and functional desktop software development. This project allowed me to strengthen my skills in application architecture, user-oriented design, and the implementation of organized technical solutions.
 
 ### Veterinary Management System
 **Repository:** [Veterinaria SOS](https://github.com/Dabji/Veterinaria.git)
 
 I contributed to the development of an academic ERP-style management system for veterinary clinics, supporting software implementation, interface design, and desktop application structure for a complete operational solution.
+
+---
 
 ---
 
