@@ -8,37 +8,64 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: readme-stats-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   generate-cards:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - name: Create output directory
-        run: mkdir -p assets/generated
+      - name: Generate README stats SVGs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node .github/scripts/generate-readme-stats.mjs
 
-      - name: Generate stats card
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: stats
-          options: username=Richard117297&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github
-          path: assets/generated/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Validate generated SVGs
+        shell: bash
+        run: |
+          set -euo pipefail
 
-      - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: top-langs
-          options: username=Richard117297&layout=compact&langs_count=6&theme=tokyonight&hide_border=true
-          path: assets/generated/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          for file in assets/generated/stats.svg assets/generated/top-langs.svg; do
+            echo "Validating $file"
+            test -s "$file"
+            grep -q "<svg" "$file"
+
+            if grep -Eiq "Something went wrong|Error fetching|Rate Limit|API rate limit|Bad credentials" "$file"; then
+              echo "::error file=$file::Generated SVG contains an error response."
+              sed -n '1,40p' "$file"
+              exit 1
+            fi
+
+            bytes="$(wc -c < "$file")"
+            echo "$file generated successfully (${bytes} bytes)"
+          done
+
+      - name: Show git diff summary
+        shell: bash
+        run: |
+          set -euo pipefail
+          git status --short
+          git diff --stat -- assets/generated/stats.svg assets/generated/top-langs.svg || true
 
       - name: Commit generated cards
+        shell: bash
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/generated/*.svg
-          git commit -m "chore: update README stats cards" || exit 0
+
+          git add assets/generated/stats.svg assets/generated/top-langs.svg
+
+          if git diff --cached --quiet; then
+            echo "No README stats changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: update README stats cards"
           git push
