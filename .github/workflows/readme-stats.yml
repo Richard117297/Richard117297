@@ -30,7 +30,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          for file in assets/generated/stats.svg assets/generated/top-langs.svg; do
+          for file in assets/generated/stats.svg assets/generated/top-langs.svg assets/generated/detailed-stats.svg; do
             echo "Validating $file"
             test -s "$file"
             grep -q "<svg" "$file"
@@ -50,7 +50,7 @@ jobs:
         run: |
           set -euo pipefail
           git status --short
-          git diff --stat -- README.md assets/generated/stats.svg assets/generated/top-langs.svg || true
+          git diff --stat -- README.md assets/generated/stats.svg assets/generated/top-langs.svg assets/generated/detailed-stats.svg || true
 
       - name: Commit generated cards
         shell: bash
@@ -60,7 +60,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/generated/stats.svg assets/generated/top-langs.svg
+          git add assets/generated/stats.svg assets/generated/top-langs.svg assets/generated/detailed-stats.svg
 
           if git diff --cached --quiet; then
             echo "No README stats changes to commit."
@@ -68,8 +68,8 @@ jobs:
           fi
 
           cache_key="${GITHUB_RUN_NUMBER:-manual}"
-          perl -0pi -e "s#\\./assets/generated/stats\\.svg(?:\\?v=[^\"]*)?#./assets/generated/stats.svg?v=${cache_key}#g; s#\\./assets/generated/top-langs\\.svg(?:\\?v=[^\"]*)?#./assets/generated/top-langs.svg?v=${cache_key}#g" README.md
+          perl -0pi -e "s#\\./assets/generated/stats\\.svg(?:\\?v=[^\"]*)?#./assets/generated/stats.svg?v=${cache_key}#g; s#\\./assets/generated/top-langs\\.svg(?:\\?v=[^\"]*)?#./assets/generated/top-langs.svg?v=${cache_key}#g; s#\\./assets/generated/detailed-stats\\.svg(?:\\?v=[^\"]*)?#./assets/generated/detailed-stats.svg?v=${cache_key}#g" README.md
 
-          git add README.md assets/generated/stats.svg assets/generated/top-langs.svg
+          git add README.md assets/generated/stats.svg assets/generated/top-langs.svg assets/generated/detailed-stats.svg
           git commit -m "chore: update README stats cards"
           git push

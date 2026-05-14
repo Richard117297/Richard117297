@@ -143,6 +143,38 @@ function buildStatsSvg({ profile, repos, contributions }) {
   return svgShell(495, 195, "GitHub stats", content);
 }
 
+function makeDetailedRow(icon, label, value, y) {
+  return `  <text x="36" y="${y}" fill="#bf91f3" font-size="20" text-anchor="middle" font-family="Segoe UI Symbol, Segoe UI, Arial, sans-serif">${escapeXml(icon)}</text>
+  <text x="62" y="${y}" fill="#38bdae" font-size="15" font-weight="700" font-family="Segoe UI, Arial, sans-serif">${escapeXml(label)}:</text>
+  <text x="298" y="${y}" fill="#38bdae" font-size="15" font-weight="700" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">${escapeXml(value)}</text>`;
+}
+
+function buildDetailedStatsSvg({ repos, contributions }) {
+  const stars = repos.reduce((total, repo) => total + repo.stargazers_count, 0);
+  const contributedRepos = contributions.commitContributionsByRepository?.length ?? 0;
+  const currentYear = new Date().getUTCFullYear();
+
+  const rows = [
+    ["☆", "Total Stars Earned", formatNumber(stars), 76],
+    ["◷", `${currentYear} Commits`, formatNumber(contributions.totalCommitContributions), 108],
+    ["⑂", `${currentYear} Pull Requests`, formatNumber(contributions.totalPullRequestContributions), 140],
+    ["!", `${currentYear} Issues`, formatNumber(contributions.totalIssueContributions), 172],
+    ["▣", "Contributed Repos", formatNumber(contributedRepos), 204],
+  ];
+
+  const content = [
+    `  <text x="30" y="38" fill="#70a5fd" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Classic Contribution Stats</text>`,
+    `  <line x1="30" y1="54" x2="465" y2="54" stroke="#2f3549" />`,
+    ...rows.map(([icon, label, value, y]) => makeDetailedRow(icon, label, value, y)),
+    `  <circle cx="398" cy="130" r="48" fill="#38bdae" opacity="0.95" />`,
+    `  <circle cx="398" cy="130" r="60" fill="none" stroke="#2f3b5c" stroke-width="12" />`,
+    `  <path d="M398 70a60 60 0 0 1 43 18" fill="none" stroke="#70a5fd" stroke-width="8" stroke-linecap="round" />`,
+    `  <text x="398" y="139" fill="#1a1b27" font-size="30" font-weight="800" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">GH</text>`,
+  ].join("\n");
+
+  return svgShell(495, 230, "Detailed GitHub stats", content);
+}
+
 function languageColor(language, fallbackIndex) {
   const known = {
     JavaScript: "#f1e05a",
@@ -195,6 +227,17 @@ const contributionQuery = `
   query ReadmeStats($login: String!, $from: DateTime!, $to: DateTime!) {
     user(login: $login) {
       contributionsCollection(from: $from, to: $to) {
+        totalCommitContributions
+        totalIssueContributions
+        totalPullRequestContributions
+        commitContributionsByRepository(maxRepositories: 100) {
+          repository {
+            name
+          }
+          contributions {
+            totalCount
+          }
+        }
         contributionCalendar {
           totalContributions
         }
@@ -223,6 +266,8 @@ const contributions = contributionData.user.contributionsCollection.contribution
 await mkdir(outputDir, { recursive: true });
 await writeFile(`${outputDir}/stats.svg`, buildStatsSvg({ profile, repos, contributions }), "utf8");
 await writeFile(`${outputDir}/top-langs.svg`, buildTopLanguagesSvg(languageTotals), "utf8");
+await writeFile(`${outputDir}/detailed-stats.svg`, buildDetailedStatsSvg({ repos, contributions }), "utf8");
 
 console.log(`Generated ${outputDir}/stats.svg`);
 console.log(`Generated ${outputDir}/top-langs.svg`);
+console.log(`Generated ${outputDir}/detailed-stats.svg`);
