@@ -50,7 +50,7 @@ jobs:
         run: |
           set -euo pipefail
           git status --short
-          git diff --stat -- assets/generated/stats.svg assets/generated/top-langs.svg || true
+          git diff --stat -- README.md assets/generated/stats.svg assets/generated/top-langs.svg || true
 
       - name: Commit generated cards
         shell: bash
@@ -67,5 +67,9 @@ jobs:
             exit 0
           fi
 
+          cache_key="${GITHUB_RUN_NUMBER:-manual}"
+          perl -0pi -e "s#\\./assets/generated/stats\\.svg(?:\\?v=[^\"]*)?#./assets/generated/stats.svg?v=${cache_key}#g; s#\\./assets/generated/top-langs\\.svg(?:\\?v=[^\"]*)?#./assets/generated/top-langs.svg?v=${cache_key}#g" README.md
+
+          git add README.md assets/generated/stats.svg assets/generated/top-langs.svg
           git commit -m "chore: update README stats cards"
           git push
