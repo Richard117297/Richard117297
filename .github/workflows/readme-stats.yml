@@ -14,24 +14,24 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Create output directory
         run: mkdir -p assets/generated
 
       - name: Generate stats card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: soulteary/github-readme-stats-action@v1.0.0
         with:
           card: stats
-          options: username=Richard117297&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github
+          options: 'username=Richard117297&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github'
           path: assets/generated/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: soulteary/github-readme-stats-action@v1.0.0
         with:
           card: top-langs
-          options: username=Richard117297&layout=compact&langs_count=6&theme=tokyonight&hide_border=true
+          options: 'username=Richard117297&layout=compact&langs_count=6&theme=tokyonight&hide_border=true'
           path: assets/generated/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
