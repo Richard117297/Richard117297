@@ -103,16 +103,22 @@ function svgShell(width, height, label, content) {
       <stop offset="0%" stop-color="#1a1b27" />
       <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdae" />
+      <stop offset="100%" stop-color="#70a5fd" />
+    </linearGradient>
   </defs>
-  <rect width="${width}" height="${height}" rx="12" fill="url(#bg)" />
+  <rect width="${width}" height="${height}" rx="10" fill="url(#bg)" />
+  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="9.5" fill="none" stroke="#2f3549" />
 ${content}
 </svg>
 `;
 }
 
-function makeStatItem(label, value, x, y) {
-  return `  <text x="${x}" y="${y}" fill="#70a5fd" font-size="12" font-weight="600" font-family="Segoe UI, Arial, sans-serif">${escapeXml(label)}</text>
-  <text x="${x}" y="${y + 20}" fill="#c3d1ff" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">${escapeXml(value)}</text>`;
+function makeStatItem(label, value, x, y, accent = "#38bdae") {
+  return `  <circle cx="${x}" cy="${y - 4}" r="4" fill="${accent}" />
+  <text x="${x + 14}" y="${y}" fill="#9aa5ce" font-size="12" font-weight="600" font-family="Segoe UI, Arial, sans-serif">${escapeXml(label)}</text>
+  <text x="${x + 14}" y="${y + 24}" fill="#c3d1ff" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">${escapeXml(value)}</text>`;
 }
 
 function buildStatsSvg({ profile, repos, contributions }) {
@@ -121,16 +127,17 @@ function buildStatsSvg({ profile, repos, contributions }) {
   const currentYear = new Date().getUTCFullYear();
 
   const items = [
-    ["Total Stars", formatNumber(stars), 30, 72],
-    ["Public Repos", formatNumber(repos.length), 260, 72],
-    ["Followers", formatNumber(profile.followers), 30, 122],
-    ["Forks", formatNumber(forks), 260, 122],
-    [`${currentYear} Contributions`, formatNumber(contributions.totalContributions), 30, 164],
+    ["Stars", formatNumber(stars), 34, 79, "#bf91f3"],
+    ["Repos", formatNumber(repos.length), 182, 79, "#70a5fd"],
+    ["Followers", formatNumber(profile.followers), 330, 79, "#38bdae"],
+    ["Forks", formatNumber(forks), 34, 139, "#ffc777"],
+    [`${currentYear} Contributions`, formatNumber(contributions.totalContributions), 182, 139, "#ff757f"],
   ];
 
   const content = [
-    `  <text x="30" y="38" fill="#70a5fd" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">${escapeXml(username)}'s GitHub Stats</text>`,
-    ...items.map(([label, value, x, y]) => makeStatItem(label, value, x, y)),
+    `  <text x="30" y="38" fill="#70a5fd" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">${escapeXml(username)}'s GitHub Stats</text>`,
+    `  <line x1="30" y1="54" x2="465" y2="54" stroke="#2f3549" />`,
+    ...items.map(([label, value, x, y, accent]) => makeStatItem(label, value, x, y, accent)),
   ].join("\n");
 
   return svgShell(495, 195, "GitHub stats", content);
@@ -162,20 +169,22 @@ function buildTopLanguagesSvg(languageTotals) {
 
   const rows = topLanguages.map(([language, bytes], index) => {
     const percent = totalBytes > 0 ? (bytes / totalBytes) * 100 : 0;
-    const y = 72 + index * 22;
+    const y = 82 + index * 46;
     const color = languageColor(language, index);
-    const width = Math.max(3, Math.round((percent / 100) * 260));
+    const width = Math.max(4, Math.round((percent / 100) * 360));
 
-    return `  <text x="30" y="${y}" fill="#c3d1ff" font-size="13" font-weight="600" font-family="Segoe UI, Arial, sans-serif">${escapeXml(language)}</text>
-  <text x="420" y="${y}" fill="#9aa5ce" font-size="12" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">${percent.toFixed(1)}%</text>
-  <rect x="155" y="${y - 10}" width="260" height="8" rx="4" fill="#24283b" />
-  <rect x="155" y="${y - 10}" width="${width}" height="8" rx="4" fill="${color}" />`;
+    return `  <circle cx="34" cy="${y - 4}" r="5" fill="${color}" />
+  <text x="48" y="${y}" fill="#c3d1ff" font-size="14" font-weight="700" font-family="Segoe UI, Arial, sans-serif">${escapeXml(language)}</text>
+  <text x="465" y="${y}" fill="#9aa5ce" font-size="13" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">${percent.toFixed(1)}%</text>
+  <rect x="30" y="${y + 12}" width="360" height="10" rx="5" fill="#24283b" />
+  <rect x="30" y="${y + 12}" width="${width}" height="10" rx="5" fill="${color}" />`;
   });
 
   const emptyState = `  <text x="247.5" y="112" fill="#9aa5ce" font-size="14" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">No language data available</text>`;
 
   const content = [
-    `  <text x="30" y="38" fill="#70a5fd" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Top Languages</text>`,
+    `  <text x="30" y="38" fill="#70a5fd" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Top Languages</text>`,
+    `  <line x1="30" y1="54" x2="465" y2="54" stroke="#2f3549" />`,
     rows.length ? rows.join("\n") : emptyState,
   ].join("\n");
 
