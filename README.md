@@ -105,6 +105,12 @@ Outside technology, I enjoy football, creative challenges, and learning experien
 
 I developed StaffTrain as an academic desktop application for passenger train management, focused on combining clean interface design, structured system logic, and functional desktop software development. This project allowed me to strengthen my skills in application architecture, user-oriented design, and the implementation of organized technical solutions.
 
+### Hegemony Linear
+**Repository:** [Hegemony Linear](https://github.com/Dabji/Hegemony-Linear)<br>
+**Live Demo:** [hegemony-linear.vercel.app](https://hegemony-linear.vercel.app/)
+
+I contributed as part of the development team for Hegemony Linear, an academic web project for Numerical Analysis inspired by the board game Hegemony: Lead Your Class to Victory. The application combines an interactive economic simulation with applied numerical methods, using a React/Vite frontend, a FastAPI backend, and a Newton-Raphson engine to support game-based learning and professor-oriented analysis.
+
 ### Veterinary Management System
 **Repository:** [Veterinaria SOS](https://github.com/Dabji/Veterinaria.git)
 

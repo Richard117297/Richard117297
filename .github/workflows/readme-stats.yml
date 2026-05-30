@@ -20,6 +20,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
       - name: Generate README stats SVGs
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -38,6 +43,12 @@ jobs:
             if grep -Eiq "Something went wrong|Error fetching|Rate Limit|API rate limit|Bad credentials" "$file"; then
               echo "::error file=$file::Generated SVG contains an error response."
               sed -n '1,40p' "$file"
+              exit 1
+            fi
+
+            if grep -Eiq "NaN|undefined|null" "$file"; then
+              echo "::error file=$file::Generated SVG contains an invalid value."
+              grep -Ein "NaN|undefined|null" "$file" || true
               exit 1
             fi
 
@@ -67,7 +78,7 @@ jobs:
             exit 0
           fi
 
-          cache_key="${GITHUB_RUN_NUMBER:-manual}"
+          cache_key="$(sha256sum assets/generated/stats.svg assets/generated/top-langs.svg assets/generated/detailed-stats.svg | sha256sum | cut -c1-12)"
           perl -0pi -e "s#\\./assets/generated/stats\\.svg(?:\\?v=[^\"]*)?#./assets/generated/stats.svg?v=${cache_key}#g; s#\\./assets/generated/top-langs\\.svg(?:\\?v=[^\"]*)?#./assets/generated/top-langs.svg?v=${cache_key}#g; s#\\./assets/generated/detailed-stats\\.svg(?:\\?v=[^\"]*)?#./assets/generated/detailed-stats.svg?v=${cache_key}#g" README.md
 
           git add README.md assets/generated/stats.svg assets/generated/top-langs.svg assets/generated/detailed-stats.svg

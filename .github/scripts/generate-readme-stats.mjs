@@ -73,10 +73,17 @@ async function fetchLanguageTotals(repos) {
   const totals = new Map();
 
   for (const repo of repos) {
-    const languages = await fetchJson(repo.languages_url);
+    let languages;
+
+    try {
+      languages = await fetchJson(repo.languages_url);
+    } catch (error) {
+      console.warn(`Skipping language data for ${repo.full_name}: ${error.message}`);
+      continue;
+    }
 
     for (const [language, bytes] of Object.entries(languages)) {
-      totals.set(language, (totals.get(language) ?? 0) + bytes);
+      totals.set(language, (totals.get(language) ?? 0) + numberOrZero(bytes));
     }
   }
 
@@ -93,7 +100,13 @@ function escapeXml(value) {
 }
 
 function formatNumber(value) {
-  return new Intl.NumberFormat("en-US").format(value);
+  const number = Number(value);
+  return new Intl.NumberFormat("en-US").format(Number.isFinite(number) ? number : 0);
+}
+
+function numberOrZero(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : 0;
 }
 
 function svgShell(width, height, label, content) {
@@ -122,16 +135,17 @@ function makeStatItem(label, value, x, y, accent = "#38bdae") {
 }
 
 function buildStatsSvg({ profile, repos, contributions }) {
-  const stars = repos.reduce((total, repo) => total + repo.stargazers_count, 0);
-  const forks = repos.reduce((total, repo) => total + repo.forks_count, 0);
+  const stars = repos.reduce((total, repo) => total + numberOrZero(repo.stargazers_count), 0);
+  const forks = repos.reduce((total, repo) => total + numberOrZero(repo.forks_count), 0);
   const currentYear = new Date().getUTCFullYear();
+  const yearContributions = contributions.contributionCalendar?.totalContributions;
 
   const items = [
     ["Stars", formatNumber(stars), 34, 79, "#bf91f3"],
     ["Repos", formatNumber(repos.length), 182, 79, "#70a5fd"],
     ["Followers", formatNumber(profile.followers), 330, 79, "#38bdae"],
     ["Forks", formatNumber(forks), 34, 139, "#ffc777"],
-    [`${currentYear} Contributions`, formatNumber(contributions.totalContributions), 182, 139, "#ff757f"],
+    [`${currentYear} Contributions`, formatNumber(yearContributions), 182, 139, "#ff757f"],
   ];
 
   const content = [
@@ -150,7 +164,7 @@ function makeDetailedRow(icon, label, value, y) {
 }
 
 function buildDetailedStatsSvg({ repos, contributions }) {
-  const stars = repos.reduce((total, repo) => total + repo.stargazers_count, 0);
+  const stars = repos.reduce((total, repo) => total + numberOrZero(repo.stargazers_count), 0);
   const contributedRepos = contributions.commitContributionsByRepository?.length ?? 0;
   const currentYear = new Date().getUTCFullYear();
 
@@ -261,7 +275,11 @@ const [profile, repos, contributionData] = await Promise.all([
 ]);
 
 const languageTotals = await fetchLanguageTotals(repos);
-const contributions = contributionData.user.contributionsCollection.contributionCalendar;
+const contributions = contributionData.user?.contributionsCollection;
+
+if (!contributions) {
+  throw new Error(`No contribution data returned for ${username}.`);
+}
 
 await mkdir(outputDir, { recursive: true });
 await writeFile(`${outputDir}/stats.svg`, buildStatsSvg({ profile, repos, contributions }), "utf8");
