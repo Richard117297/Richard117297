@@ -145,11 +145,24 @@ I contributed to the development of an academic ERP-style management system for 
 ## <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="30"> GitHub Stats
 
 <div align="center">
-  <img src="./assets/generated/stats.svg?v=33" height="180" alt="GitHub stats" />
-  <img src="./assets/generated/top-langs.svg?v=33" height="180" alt="Top languages" />
-  <br><br>
-  <img src="./assets/generated/detailed-stats.svg?v=33" height="180" alt="Detailed GitHub stats" />
-  <img src="https://streak-stats.demolab.com?user=Richard117297&theme=tokyonight&hide_border=true" height="180" alt="GitHub streak" />
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="./assets/generated/stats.svg?v=33" width="100%" alt="GitHub stats" />
+      </td>
+      <td align="center" width="50%">
+        <img src="./assets/generated/detailed-stats.svg?v=33" width="100%" alt="Detailed GitHub stats" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <img src="./assets/generated/top-langs.svg?v=33" width="100%" alt="Top languages" />
+      </td>
+      <td align="center" width="50%">
+        <img src="https://streak-stats.demolab.com?user=Richard117297&theme=tokyonight&hide_border=true" width="100%" alt="GitHub streak" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
