@@ -145,10 +145,10 @@ I contributed to the development of an academic ERP-style management system for 
 ## <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="30"> GitHub Stats
 
 <div align="center">
-  <img src="./assets/generated/stats.svg?v=design-v2" height="180" alt="GitHub stats" />
-  <img src="./assets/generated/top-langs.svg?v=design-v2" height="180" alt="Top languages" />
+  <img src="./assets/generated/stats.svg?v=33" height="180" alt="GitHub stats" />
+  <img src="./assets/generated/top-langs.svg?v=33" height="180" alt="Top languages" />
   <br><br>
-  <img src="./assets/generated/detailed-stats.svg?v=design-v3" height="180" alt="Detailed GitHub stats" />
+  <img src="./assets/generated/detailed-stats.svg?v=33" height="180" alt="Detailed GitHub stats" />
   <img src="https://streak-stats.demolab.com?user=Richard117297&theme=tokyonight&hide_border=true" height="180" alt="GitHub streak" />
 </div>
 

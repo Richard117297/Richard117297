@@ -15,7 +15,7 @@
   <line x1="30" y1="54" x2="465" y2="54" stroke="#2f3549" />
   <circle cx="34" cy="75" r="4" fill="#bf91f3" />
   <text x="48" y="79" fill="#9aa5ce" font-size="12" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Stars</text>
-  <text x="48" y="103" fill="#c3d1ff" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">4</text>
+  <text x="48" y="103" fill="#c3d1ff" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">5</text>
   <circle cx="182" cy="75" r="4" fill="#70a5fd" />
   <text x="196" y="79" fill="#9aa5ce" font-size="12" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Repos</text>
   <text x="196" y="103" fill="#c3d1ff" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">2</text>
