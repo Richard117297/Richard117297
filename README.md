@@ -148,15 +148,15 @@ I contributed to the development of an academic ERP-style management system for 
   <table>
     <tr>
       <td align="center" width="50%">
-        <img src="./assets/generated/stats.svg?v=ac8ad0717514" width="100%" alt="GitHub stats" />
+        <img src="./assets/generated/stats.svg?v=25fab662fea4" width="100%" alt="GitHub stats" />
       </td>
       <td align="center" width="50%">
-        <img src="./assets/generated/detailed-stats.svg?v=ac8ad0717514" width="100%" alt="Detailed GitHub stats" />
+        <img src="./assets/generated/detailed-stats.svg?v=25fab662fea4" width="100%" alt="Detailed GitHub stats" />
       </td>
     </tr>
     <tr>
       <td align="center" width="50%">
-        <img src="./assets/generated/top-langs.svg?v=ac8ad0717514" width="100%" alt="Top languages" />
+        <img src="./assets/generated/top-langs.svg?v=25fab662fea4" width="100%" alt="Top languages" />
       </td>
       <td align="center" width="50%">
         <img src="https://streak-stats.demolab.com?user=Richard117297&theme=tokyonight&hide_border=true" width="100%" alt="GitHub streak" />

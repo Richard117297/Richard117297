@@ -18,16 +18,16 @@
   <text x="298" y="76" fill="#38bdae" font-size="15" font-weight="700" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">5</text>
   <text x="36" y="108" fill="#bf91f3" font-size="20" text-anchor="middle" font-family="Segoe UI Symbol, Segoe UI, Arial, sans-serif">◷</text>
   <text x="62" y="108" fill="#38bdae" font-size="15" font-weight="700" font-family="Segoe UI, Arial, sans-serif">2026 Commits:</text>
-  <text x="298" y="108" fill="#38bdae" font-size="15" font-weight="700" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">14</text>
+  <text x="298" y="108" fill="#38bdae" font-size="15" font-weight="700" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">85</text>
   <text x="36" y="140" fill="#bf91f3" font-size="20" text-anchor="middle" font-family="Segoe UI Symbol, Segoe UI, Arial, sans-serif">⑂</text>
   <text x="62" y="140" fill="#38bdae" font-size="15" font-weight="700" font-family="Segoe UI, Arial, sans-serif">2026 Pull Requests:</text>
-  <text x="298" y="140" fill="#38bdae" font-size="15" font-weight="700" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">2</text>
+  <text x="298" y="140" fill="#38bdae" font-size="15" font-weight="700" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">21</text>
   <text x="36" y="172" fill="#bf91f3" font-size="20" text-anchor="middle" font-family="Segoe UI Symbol, Segoe UI, Arial, sans-serif">!</text>
   <text x="62" y="172" fill="#38bdae" font-size="15" font-weight="700" font-family="Segoe UI, Arial, sans-serif">2026 Issues:</text>
-  <text x="298" y="172" fill="#38bdae" font-size="15" font-weight="700" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">0</text>
+  <text x="298" y="172" fill="#38bdae" font-size="15" font-weight="700" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">1</text>
   <text x="36" y="204" fill="#bf91f3" font-size="20" text-anchor="middle" font-family="Segoe UI Symbol, Segoe UI, Arial, sans-serif">▣</text>
   <text x="62" y="204" fill="#38bdae" font-size="15" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Contributed Repos:</text>
-  <text x="298" y="204" fill="#38bdae" font-size="15" font-weight="700" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">2</text>
+  <text x="298" y="204" fill="#38bdae" font-size="15" font-weight="700" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">3</text>
   <circle cx="398" cy="130" r="48" fill="#38bdae" opacity="0.95" />
   <circle cx="398" cy="130" r="60" fill="none" stroke="#2f3b5c" stroke-width="12" />
   <path d="M398 70a60 60 0 0 1 43 18" fill="none" stroke="#70a5fd" stroke-width="8" stroke-linecap="round" />
