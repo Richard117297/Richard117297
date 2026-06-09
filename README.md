@@ -117,6 +117,11 @@ I contributed as part of the development team for Hegemony Linear, an academic w
 
 I contributed as part of the development team for an institutional full-stack web application built as an academic project with a real client at Universidad Pontificia Bolivariana, Bucaramanga. The system supports educational financing simulation through structured business rules, role-based user flows, financial summaries, amortization tables, administrative management, formal documentation, testing, and production deployment.
 
+### Ruta 7 Ríos Tourism Platform
+**Repository:** [Turismo Cali - Ruta 7 Ríos](https://github.com/Dabji/Turismo-Cali-UPB)
+
+I contributed as part of the development team for Ruta 7 Ríos, an academic tourism platform for Santiago de Cali developed within Track 2 of the integrator project. My work supported the public and informative web experience, visual identity, and user-oriented presentation of cultural, natural, salsa, and gastronomic tourism content within a broader solution that also involved backend services, infrastructure, connectivity, and deployment evidence.
+
 ### Veterinary Management System
 **Repository:** [Veterinaria SOS](https://github.com/Dabji/Veterinaria.git)
 
