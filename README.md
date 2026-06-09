@@ -111,6 +111,12 @@ I developed StaffTrain as an academic desktop application for passenger train ma
 
 I contributed as part of the development team for Hegemony Linear, an academic web project for Numerical Analysis inspired by the board game Hegemony: Lead Your Class to Victory. The application combines an interactive economic simulation with applied numerical methods, using a React/Vite frontend, a FastAPI backend, and a Newton-Raphson engine to support game-based learning and professor-oriented analysis.
 
+### UPB Educational Credit Simulator
+**Repository:** [Simulador de Crédito Educativo UPB](https://github.com/Dabji/Simulador-Credito-UPB)<br>
+**Production Application:** [simuladorfinanciaciondirecta.bucaramanga.upb.edu.co](https://simuladorfinanciaciondirecta.bucaramanga.upb.edu.co/)
+
+I contributed as part of the development team for an institutional full-stack web application built as an academic project with a real client at Universidad Pontificia Bolivariana, Bucaramanga. The system supports educational financing simulation through structured business rules, role-based user flows, financial summaries, amortization tables, administrative management, formal documentation, testing, and production deployment.
+
 ### Veterinary Management System
 **Repository:** [Veterinaria SOS](https://github.com/Dabji/Veterinaria.git)
 
