@@ -22,6 +22,18 @@
     <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" />
     <animate attributeName="opacity" values="0.55;1;0.55" dur="3s" repeatCount="indefinite" />
   </circle>
-  <circle cx="330" cy="11" r="2.5" fill="#22d3ee" />
-  <circle cx="670" cy="11" r="2.5" fill="#8b5cf6" />
+  <circle cx="110" cy="11" r="2.5" fill="#22d3ee" filter="url(#glow)">
+    <animate attributeName="cx" values="110;500;890" dur="7s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;0.9;0" dur="7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="890" cy="11" r="2.5" fill="#8b5cf6" filter="url(#glow)">
+    <animate attributeName="cx" values="890;500;110" dur="8.5s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;0.75;0" dur="8.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="330" cy="11" r="2" fill="#22d3ee">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="670" cy="11" r="2" fill="#8b5cf6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" begin="1s" repeatCount="indefinite" />
+  </circle>
 </svg>
