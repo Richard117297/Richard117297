@@ -1,28 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title description">
-  <title id="title">Richard developer profile banner</title>
-  <desc id="description">Systems and Computer Engineering student from Bucaramanga, Colombia.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title description">
+  <title id="title">Richard technical profile banner</title>
+  <desc id="description">David Ricardo Carvajal Barragán, Systems and Computer Engineering Student from Bucaramanga, Colombia.</desc>
   <defs>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#273247" stroke-width="1" />
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050914" />
+      <stop offset="55%" stop-color="#0a1728" />
+      <stop offset="100%" stop-color="#10243a" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="52%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#28415e" stroke-width="1" />
     </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="1200" height="280" rx="18" fill="#0d1117" />
-  <rect x="1" y="1" width="1198" height="278" rx="17" fill="none" stroke="#2d3c54" stroke-width="2" />
-  <rect x="1" y="1" width="1198" height="278" rx="17" fill="url(#grid)" opacity="0.36" />
+  <rect width="1200" height="320" rx="20" fill="url(#background)" />
+  <rect x="1" y="1" width="1198" height="318" rx="19" fill="none" stroke="#33506f" stroke-width="2" />
+  <rect x="1" y="1" width="1198" height="318" rx="19" fill="url(#grid)" opacity="0.28" />
 
-  <rect x="56" y="54" width="6" height="172" rx="3" fill="#2dd4bf" />
-  <circle cx="59" cy="54" r="8" fill="#38bdf8" />
-  <circle cx="59" cy="226" r="8" fill="#a78bfa" />
+  <rect x="0" y="0" width="3" height="320" fill="#22d3ee" opacity="0.13">
+    <animate attributeName="x" values="0;1197;0" dur="14s" repeatCount="indefinite" />
+  </rect>
 
-  <text x="92" y="126" fill="#f0f6fc" font-size="64" font-weight="800" font-family="Segoe UI, Ubuntu, Arial, sans-serif">RICHARD</text>
-  <text x="95" y="169" fill="#38bdf8" font-size="23" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">SYSTEMS &amp; COMPUTER ENGINEERING STUDENT</text>
-  <text x="95" y="205" fill="#9fb0c7" font-size="18" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Bucaramanga, Colombia</text>
+  <rect x="58" y="42" width="194" height="30" rx="15" fill="#0b2435" stroke="#22d3ee" stroke-width="1" />
+  <circle cx="78" cy="57" r="5" fill="#2dd4bf" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <text x="94" y="63" fill="#b7e8f2" font-size="13" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">PROFILE // STUDENT</text>
 
-  <path d="M850 76h-54v128h54" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M1030 76h54v128h-54" fill="none" stroke="#2dd4bf" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M965 58l-56 164" fill="none" stroke="#a78bfa" stroke-width="5" stroke-linecap="round" />
-  <circle cx="886" cy="111" r="7" fill="#2dd4bf" />
-  <circle cx="1010" cy="169" r="7" fill="#38bdf8" />
-  <path d="M886 111h88l36 58" fill="none" stroke="#536782" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="58" y="141" fill="#f0f6fc" font-size="70" font-weight="800" font-family="Segoe UI, Ubuntu, Arial, sans-serif">RICHARD</text>
+  <rect x="60" y="159" width="510" height="5" rx="2.5" fill="url(#accent)" filter="url(#glow)" />
+  <text x="60" y="202" fill="#42d7ee" font-size="22" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">SYSTEMS &amp; COMPUTER ENGINEERING STUDENT</text>
+  <text x="60" y="239" fill="#d3ddea" font-size="18" font-weight="600" font-family="Segoe UI, Ubuntu, Arial, sans-serif">David Ricardo Carvajal Barragán</text>
+  <text x="60" y="272" fill="#95a9c2" font-size="17" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Bucaramanga, Colombia</text>
+
+  <rect x="790" y="54" width="342" height="218" rx="14" fill="#07111f" stroke="#365372" stroke-width="2" />
+  <rect x="790" y="54" width="342" height="38" rx="14" fill="#10263b" />
+  <path d="M790 92h342" stroke="#365372" stroke-width="2" />
+  <circle cx="814" cy="73" r="5" fill="#fb7185" />
+  <circle cx="834" cy="73" r="5" fill="#facc15" />
+  <circle cx="854" cy="73" r="5" fill="#2dd4bf" />
+  <text x="885" y="79" fill="#8fa8c2" font-size="13" font-family="Consolas, Menlo, monospace">richard@portfolio</text>
+
+  <text x="820" y="132" fill="#2dd4bf" font-size="18" font-family="Consolas, Menlo, monospace">&gt;</text>
+  <text x="848" y="132" fill="#d8e4f0" font-size="18" font-family="Consolas, Menlo, monospace">build --clean</text>
+  <text x="820" y="174" fill="#22d3ee" font-size="18" font-family="Consolas, Menlo, monospace">&gt;</text>
+  <text x="848" y="174" fill="#d8e4f0" font-size="18" font-family="Consolas, Menlo, monospace">learn --continuous</text>
+  <text x="820" y="216" fill="#a78bfa" font-size="18" font-family="Consolas, Menlo, monospace">&gt;</text>
+  <text x="848" y="216" fill="#d8e4f0" font-size="18" font-family="Consolas, Menlo, monospace">improve --together</text>
+  <rect x="820" y="242" width="150" height="3" rx="1.5" fill="url(#accent)">
+    <animate attributeName="width" values="72;244;72" dur="6s" repeatCount="indefinite" />
+  </rect>
 </svg>
