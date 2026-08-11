@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="560" viewBox="0 0 600 560" role="img" aria-labelledby="title description">
+  <title id="title">StaffTrain project card</title>
+  <desc id="description">StaffTrain. ACADEMIC. DESKTOP. I developed StaffTrain as an academic desktop application for passenger train management, focused on combining clean interface design, structured system logic, and functional desktop software development. This project allowed me to strengthen my skills in application architecture, user-oriented design, and the implementation of organized technical solutions.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050914" />
+      <stop offset="54%" stop-color="#081421" />
+      <stop offset="100%" stop-color="#102238" />
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="48%" stop-color="#2dd4bf" />
+      <stop offset="78%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.11" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#27415e" stroke-width="1" opacity="0.34" />
+    </pattern>
+    <clipPath id="frameClip"><rect width="600" height="560" rx="20" /></clipPath>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="560" rx="20" fill="url(#background)" />
+  <rect x="1" y="1" width="598" height="558" rx="19" fill="none" stroke="#345778" stroke-width="2" />
+  <rect x="1" y="1" width="598" height="558" rx="19" fill="url(#grid)" opacity="0.18" />
+  <rect x="28" y="24" width="544" height="512" rx="17" fill="#060d17" fill-opacity="0.64" stroke="#2f648b" stroke-width="1.4" />
+  <rect x="29" y="25" width="542" height="510" rx="16" fill="none" stroke="#22d3ee" stroke-opacity="0.22" />
+  <g clip-path="url(#frameClip)">
+    <rect x="0" y="-90" width="600" height="90" fill="url(#scan)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 650" dur="12s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <rect x="28" y="533" width="544" height="3" rx="1.5" fill="url(#edge)" opacity="0.5" />
+  <circle cx="52" cy="56" r="4.5" fill="#22d3ee" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <text x="68" y="62" fill="#22d3ee" font-size="16" font-weight="800" font-family="Consolas, Menlo, monospace">[01] project.stafftrain</text>
+  <text x="52" y="88" fill="#8fa3ba" font-size="13" font-family="Consolas, Menlo, monospace">richard@portfolio:~/projects$ inspect project.stafftrain</text>
+  <text x="548" y="62" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">PROJECT // READY</text>
+  <line x1="52" y1="105" x2="548" y2="105" stroke="#315474" stroke-width="1" />
+  <line x1="52" y1="105" x2="210" y2="105" stroke="url(#edge)" stroke-width="2" />
+  <text x="52" y="151" fill="#5f7590" font-size="13" font-family="Consolas, Menlo, monospace">PROJECT 01 // VERIFIED</text>
+<text x="52" y="190" fill="#f0f6fc" font-size="29" font-weight="800" text-anchor="start" font-family="Segoe UI, Ubuntu, Arial, sans-serif">
+    <tspan x="52" dy="0">StaffTrain</tspan>
+  </text>
+  <rect x="52" y="202" width="102.4" height="30" rx="15" fill="#0b1726" stroke="#22d3ee" stroke-opacity="0.72" />
+  <text x="103.2" y="222" fill="#22d3ee" font-size="12" font-weight="800" text-anchor="middle" font-family="Consolas, Menlo, monospace">ACADEMIC</text>
+  <rect x="166.4" y="202" width="93.10000000000001" height="30" rx="15" fill="#0b1726" stroke="#22d3ee" stroke-opacity="0.72" />
+  <text x="212.95000000000002" y="222" fill="#22d3ee" font-size="12" font-weight="800" text-anchor="middle" font-family="Consolas, Menlo, monospace">DESKTOP</text>
+  <text x="52" y="250" fill="#22d3ee" font-size="13" font-weight="800" font-family="Consolas, Menlo, monospace">DESCRIPTION.LOG</text>
+<text x="52" y="275" fill="#d3ddea" font-size="17" font-weight="400" text-anchor="start" font-family="Segoe UI, Ubuntu, Arial, sans-serif">
+    <tspan x="52" dy="0">I developed StaffTrain as an academic desktop</tspan>
+    <tspan x="52" dy="27">application for passenger train management, focused on</tspan>
+    <tspan x="52" dy="27">combining clean interface design, structured system</tspan>
+    <tspan x="52" dy="27">logic, and functional desktop software development.</tspan>
+    <tspan x="52" dy="27">This project allowed me to strengthen my skills in</tspan>
+    <tspan x="52" dy="27">application architecture, user-oriented design, and</tspan>
+    <tspan x="52" dy="27">the implementation of organized technical solutions.</tspan>
+  </text>
+  <text x="548" y="508" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">LINKS // LIVE BELOW</text>
+
+</svg>
