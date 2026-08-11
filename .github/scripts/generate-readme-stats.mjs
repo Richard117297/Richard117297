@@ -3,6 +3,8 @@ import { mkdir, writeFile } from "node:fs/promises";
 const username = "Richard117297";
 const outputDir = "assets/generated";
 const token = process.env.GITHUB_TOKEN;
+const cardWidth = 495;
+const cardHeight = 230;
 
 if (!token) {
   throw new Error("GITHUB_TOKEN is required to generate README stats.");
@@ -154,7 +156,7 @@ function buildStatsSvg({ profile, repos, contributions }) {
     ...items.map(([label, value, x, y, accent]) => makeStatItem(label, value, x, y, accent)),
   ].join("\n");
 
-  return svgShell(495, 195, "GitHub stats", content);
+  return svgShell(cardWidth, cardHeight, "GitHub stats", content);
 }
 
 function makeDetailedRow(icon, label, value, y) {
@@ -186,7 +188,7 @@ function buildDetailedStatsSvg({ repos, contributions }) {
     `  <text x="398" y="139" fill="#1a1b27" font-size="30" font-weight="800" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">GH</text>`,
   ].join("\n");
 
-  return svgShell(495, 230, "Detailed GitHub stats", content);
+  return svgShell(cardWidth, cardHeight, "Detailed GitHub stats", content);
 }
 
 function languageColor(language, fallbackIndex) {
@@ -212,18 +214,22 @@ function buildTopLanguagesSvg(languageTotals) {
   const topLanguages = [...languageTotals.entries()]
     .sort((a, b) => b[1] - a[1])
     .slice(0, 6);
+  const rowStart = 78;
+  const rowGap = topLanguages.length > 1
+    ? Math.min(32, 130 / (topLanguages.length - 1))
+    : 0;
 
   const rows = topLanguages.map(([language, bytes], index) => {
     const percent = totalBytes > 0 ? (bytes / totalBytes) * 100 : 0;
-    const y = 82 + index * 46;
+    const y = rowStart + index * rowGap;
     const color = languageColor(language, index);
     const width = Math.max(4, Math.round((percent / 100) * 360));
 
     return `  <circle cx="34" cy="${y - 4}" r="5" fill="${color}" />
   <text x="48" y="${y}" fill="#c3d1ff" font-size="14" font-weight="700" font-family="Segoe UI, Arial, sans-serif">${escapeXml(language)}</text>
   <text x="465" y="${y}" fill="#9aa5ce" font-size="13" text-anchor="end" font-family="Segoe UI, Arial, sans-serif">${percent.toFixed(1)}%</text>
-  <rect x="30" y="${y + 12}" width="360" height="10" rx="5" fill="#24283b" />
-  <rect x="30" y="${y + 12}" width="${width}" height="10" rx="5" fill="${color}" />`;
+  <rect x="30" y="${y + 10}" width="360" height="7" rx="3.5" fill="#24283b" />
+  <rect x="30" y="${y + 10}" width="${width}" height="7" rx="3.5" fill="${color}" />`;
   });
 
   const emptyState = `  <text x="247.5" y="112" fill="#9aa5ce" font-size="14" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">No language data available</text>`;
@@ -234,7 +240,7 @@ function buildTopLanguagesSvg(languageTotals) {
     rows.length ? rows.join("\n") : emptyState,
   ].join("\n");
 
-  return svgShell(495, 195, "Top languages", content);
+  return svgShell(cardWidth, cardHeight, "Top languages", content);
 }
 
 const contributionQuery = `

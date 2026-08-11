@@ -226,6 +226,14 @@ Veterinary Management System — I contributed to the development of an academic
 </p>
 
 <p align="center">
+  <a href="https://github.com/Richard117297" target="_blank"><img src="./assets/readme/connect-github.svg" width="165" alt="Open Richard's GitHub profile" /></a>
+  <a href="https://www.linkedin.com/in/david-ricardo-carvajal-barragan-20a686332/" target="_blank"><img src="./assets/readme/connect-linkedin.svg" width="165" alt="Open Richard's LinkedIn profile" /></a>
+  <a href="mailto:richardcarvajalb@gmail.com"><img src="./assets/readme/connect-gmail.svg" width="165" alt="Email Richard with Gmail" /></a>
+  <a href="https://www.instagram.com/richard__carvajal/" target="_blank"><img src="./assets/readme/connect-instagram.svg" width="165" alt="Open Richard's Instagram profile" /></a>
+  <a href="https://www.facebook.com/david.carvajal.805742" target="_blank"><img src="./assets/readme/connect-facebook.svg" width="165" alt="Open Richard's Facebook profile" /></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/Richard117297" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub">
   </a>
@@ -259,10 +267,10 @@ Veterinary Management System — I contributed to the development of an academic
 </p>
 
 <p align="center">
-  <img src="./assets/generated/stats.svg?v=9c08da7ed462" width="49%" alt="GitHub stats" />
-  <img src="./assets/generated/detailed-stats.svg?v=9c08da7ed462" width="49%" alt="Detailed GitHub stats" /><br>
-  <img src="./assets/generated/top-langs.svg?v=9c08da7ed462" width="49%" alt="Top languages" />
-  <img src="https://streak-stats.demolab.com?user=Richard117297&theme=tokyonight&hide_border=true" width="49%" alt="GitHub streak" />
+  <img src="./assets/generated/stats.svg?v=9a7520bf7c8b" width="49%" alt="GitHub stats" />
+  <img src="./assets/generated/detailed-stats.svg?v=9a7520bf7c8b" width="49%" alt="Detailed GitHub stats" /><br>
+  <img src="./assets/generated/top-langs.svg?v=9a7520bf7c8b" width="49%" alt="Top languages" />
+  <img src="https://streak-stats.demolab.com?user=Richard117297&amp;theme=tokyonight&amp;hide_border=true&amp;card_width=495&amp;card_height=230&amp;disable_animations=true" width="49%" alt="GitHub streak" />
 </p>
 
 ---
