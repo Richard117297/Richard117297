@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="573" viewBox="0 0 600 573" role="img" aria-labelledby="title description">
+  <title id="title">Ruta 7 Ríos Tourism Platform project card</title>
+  <desc id="description">Ruta 7 Ríos Tourism Platform. TRACK 2. TOURISM PLATFORM. I contributed as part of the development team for Ruta 7 Ríos, an academic tourism platform for Santiago de Cali developed within Track 2 of the integrator project. My work supported the public and informative web experience, visual identity, and user-oriented presentation of cultural, natural, salsa, and gastronomic tourism content within a broader solution that also involved backend services, infrastructure, connectivity, and deployment evidence.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050914" />
+      <stop offset="54%" stop-color="#081421" />
+      <stop offset="100%" stop-color="#102238" />
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="48%" stop-color="#2dd4bf" />
+      <stop offset="78%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.11" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#27415e" stroke-width="1" opacity="0.34" />
+    </pattern>
+    <clipPath id="frameClip"><rect width="600" height="573" rx="20" /></clipPath>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="573" rx="20" fill="url(#background)" />
+  <rect x="1" y="1" width="598" height="571" rx="19" fill="none" stroke="#345778" stroke-width="2" />
+  <rect x="1" y="1" width="598" height="571" rx="19" fill="url(#grid)" opacity="0.18" />
+  <rect x="28" y="24" width="544" height="525" rx="17" fill="#060d17" fill-opacity="0.64" stroke="#2f648b" stroke-width="1.4" />
+  <rect x="29" y="25" width="542" height="523" rx="16" fill="none" stroke="#8b5cf6" stroke-opacity="0.22" />
+  <g clip-path="url(#frameClip)">
+    <rect x="0" y="-92" width="600" height="92" fill="url(#scan)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 665" dur="12s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <rect x="28" y="546" width="544" height="3" rx="1.5" fill="url(#edge)" opacity="0.5" />
+  <circle cx="52" cy="56" r="4.5" fill="#8b5cf6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <text x="68" y="62" fill="#8b5cf6" font-size="16" font-weight="800" font-family="Consolas, Menlo, monospace">[04] project.ruta-7-rios</text>
+  <text x="52" y="88" fill="#8fa3ba" font-size="13" font-family="Consolas, Menlo, monospace">richard@portfolio:~/projects$ inspect project.ruta-7-rios</text>
+  <text x="548" y="62" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">PROJECT // READY</text>
+  <line x1="52" y1="105" x2="548" y2="105" stroke="#315474" stroke-width="1" />
+  <line x1="52" y1="105" x2="210" y2="105" stroke="url(#edge)" stroke-width="2" />
+  <text x="52" y="151" fill="#5f7590" font-size="13" font-family="Consolas, Menlo, monospace">PROJECT 04 // VERIFIED</text>
+<text x="52" y="190" fill="#f0f6fc" font-size="29" font-weight="800" text-anchor="start" font-family="Segoe UI, Ubuntu, Arial, sans-serif">
+    <tspan x="52" dy="0">Ruta 7 Ríos Tourism Platform</tspan>
+  </text>
+  <rect x="52" y="202" width="93.10000000000001" height="30" rx="15" fill="#0b1726" stroke="#8b5cf6" stroke-opacity="0.72" />
+  <text x="98.55000000000001" y="222" fill="#8b5cf6" font-size="12" font-weight="800" text-anchor="middle" font-family="Consolas, Menlo, monospace">TRACK 2</text>
+  <rect x="157.10000000000002" y="202" width="176.8" height="30" rx="15" fill="#0b1726" stroke="#8b5cf6" stroke-opacity="0.72" />
+  <text x="245.50000000000003" y="222" fill="#8b5cf6" font-size="12" font-weight="800" text-anchor="middle" font-family="Consolas, Menlo, monospace">TOURISM PLATFORM</text>
+  <text x="52" y="250" fill="#8b5cf6" font-size="13" font-weight="800" font-family="Consolas, Menlo, monospace">DESCRIPTION.LOG</text>
+<text x="52" y="275" fill="#d3ddea" font-size="17" font-weight="400" text-anchor="start" font-family="Segoe UI, Ubuntu, Arial, sans-serif">
+    <tspan x="52" dy="0">I contributed as part of the development team for Ruta</tspan>
+    <tspan x="52" dy="27">7 Ríos, an academic tourism platform for Santiago de</tspan>
+    <tspan x="52" dy="27">Cali developed within Track 2 of the integrator</tspan>
+    <tspan x="52" dy="27">project. My work supported the public and informative</tspan>
+    <tspan x="52" dy="27">web experience, visual identity, and user-oriented</tspan>
+    <tspan x="52" dy="27">presentation of cultural, natural, salsa, and</tspan>
+    <tspan x="52" dy="27">gastronomic tourism content within a broader solution</tspan>
+    <tspan x="52" dy="27">that also involved backend services, infrastructure,</tspan>
+    <tspan x="52" dy="27">connectivity, and deployment evidence.</tspan>
+  </text>
+  <text x="548" y="521" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">LINKS // LIVE BELOW</text>
+
+</svg>

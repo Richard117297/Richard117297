@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="690" viewBox="0 0 600 690" role="img" aria-labelledby="title description">
+  <title id="title">Current Focus active pipeline</title>
+  <desc id="description">BUILD: Building clean and functional web and desktop applications. DESIGN: Improving UI/UX design and front-end structure. LOGIC: Strengthening software logic, architecture, and technical problem-solving. AI: Applying AI-assisted workflows in a practical and professional way. GROW: Growing through collaboration, new challenges, and continuous learning</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050914" />
+      <stop offset="54%" stop-color="#081421" />
+      <stop offset="100%" stop-color="#102238" />
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="48%" stop-color="#2dd4bf" />
+      <stop offset="78%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.11" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#27415e" stroke-width="1" opacity="0.34" />
+    </pattern>
+    <clipPath id="frameClip"><rect width="600" height="690" rx="20" /></clipPath>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="690" rx="20" fill="url(#background)" />
+  <rect x="1" y="1" width="598" height="688" rx="19" fill="none" stroke="#345778" stroke-width="2" />
+  <rect x="1" y="1" width="598" height="688" rx="19" fill="url(#grid)" opacity="0.18" />
+  <rect x="28" y="24" width="544" height="642" rx="17" fill="#060d17" fill-opacity="0.64" stroke="#2f648b" stroke-width="1.4" />
+  <rect x="29" y="25" width="542" height="640" rx="16" fill="none" stroke="#2dd4bf" stroke-opacity="0.22" />
+  <g clip-path="url(#frameClip)">
+    <rect x="0" y="-110" width="600" height="110" fill="url(#scan)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 800" dur="12s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <rect x="28" y="663" width="544" height="3" rx="1.5" fill="url(#edge)" opacity="0.5" />
+  <circle cx="52" cy="56" r="4.5" fill="#2dd4bf" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <text x="68" y="62" fill="#2dd4bf" font-size="16" font-weight="800" font-family="Consolas, Menlo, monospace">CURRENT FOCUS // ACTIVE PIPELINE</text>
+  <text x="52" y="88" fill="#8fa3ba" font-size="13" font-family="Consolas, Menlo, monospace">richard@portfolio:~$ run focus --active</text>
+  <text x="548" y="62" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">5 NODES // RUNNING</text>
+  <line x1="52" y1="105" x2="548" y2="105" stroke="#315474" stroke-width="1" />
+  <line x1="52" y1="105" x2="210" y2="105" stroke="url(#edge)" stroke-width="2" />
+  <line x1="64" y1="146" x2="64" y2="620" stroke="#244866" stroke-width="4" stroke-dasharray="8 10">
+    <animate attributeName="stroke-dashoffset" values="0;-36" dur="3.5s" repeatCount="indefinite" />
+  </line>
+  <rect x="92" y="127" width="460" height="80" rx="12" fill="#0b1726" stroke="#22d3ee" stroke-opacity="0.38" />
+  <circle cx="64" cy="158" r="13" fill="#07111f" stroke="#22d3ee" stroke-width="3">
+    <animate attributeName="r" values="12;15;12" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="64" cy="158" r="4" fill="#22d3ee" />
+  <text x="110" y="153" fill="#22d3ee" font-size="18" font-weight="800" font-family="Consolas, Menlo, monospace">01 // BUILD</text>
+<text x="110" y="181" fill="#d3ddea" font-size="16" font-weight="400" text-anchor="start" font-family="Segoe UI, Ubuntu, Arial, sans-serif">
+    <tspan x="110" dy="0">Building clean and functional web and desktop</tspan>
+    <tspan x="110" dy="21">applications</tspan>
+  </text>
+  <rect x="92" y="221" width="460" height="80" rx="12" fill="#0b1726" stroke="#2dd4bf" stroke-opacity="0.38" />
+  <circle cx="64" cy="252" r="13" fill="#07111f" stroke="#2dd4bf" stroke-width="3">
+    <animate attributeName="r" values="12;15;12" dur="3.35s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="64" cy="252" r="4" fill="#2dd4bf" />
+  <text x="110" y="247" fill="#2dd4bf" font-size="18" font-weight="800" font-family="Consolas, Menlo, monospace">02 // DESIGN</text>
+<text x="110" y="275" fill="#d3ddea" font-size="16" font-weight="400" text-anchor="start" font-family="Segoe UI, Ubuntu, Arial, sans-serif">
+    <tspan x="110" dy="0">Improving UI/UX design and front-end structure</tspan>
+  </text>
+  <rect x="92" y="315" width="460" height="80" rx="12" fill="#0b1726" stroke="#3b82f6" stroke-opacity="0.38" />
+  <circle cx="64" cy="346" r="13" fill="#07111f" stroke="#3b82f6" stroke-width="3">
+    <animate attributeName="r" values="12;15;12" dur="3.7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="64" cy="346" r="4" fill="#3b82f6" />
+  <text x="110" y="341" fill="#3b82f6" font-size="18" font-weight="800" font-family="Consolas, Menlo, monospace">03 // LOGIC</text>
+<text x="110" y="369" fill="#d3ddea" font-size="16" font-weight="400" text-anchor="start" font-family="Segoe UI, Ubuntu, Arial, sans-serif">
+    <tspan x="110" dy="0">Strengthening software logic, architecture, and</tspan>
+    <tspan x="110" dy="21">technical problem-solving</tspan>
+  </text>
+  <rect x="92" y="409" width="460" height="80" rx="12" fill="#0b1726" stroke="#8b5cf6" stroke-opacity="0.38" />
+  <circle cx="64" cy="440" r="13" fill="#07111f" stroke="#8b5cf6" stroke-width="3">
+    <animate attributeName="r" values="12;15;12" dur="4.05s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="64" cy="440" r="4" fill="#8b5cf6" />
+  <text x="110" y="435" fill="#8b5cf6" font-size="18" font-weight="800" font-family="Consolas, Menlo, monospace">04 // AI</text>
+<text x="110" y="463" fill="#d3ddea" font-size="16" font-weight="400" text-anchor="start" font-family="Segoe UI, Ubuntu, Arial, sans-serif">
+    <tspan x="110" dy="0">Applying AI-assisted workflows in a practical and</tspan>
+    <tspan x="110" dy="21">professional way</tspan>
+  </text>
+  <rect x="92" y="503" width="460" height="80" rx="12" fill="#0b1726" stroke="#38bdf8" stroke-opacity="0.38" />
+  <circle cx="64" cy="534" r="13" fill="#07111f" stroke="#38bdf8" stroke-width="3">
+    <animate attributeName="r" values="12;15;12" dur="4.4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="64" cy="534" r="4" fill="#38bdf8" />
+  <text x="110" y="529" fill="#38bdf8" font-size="18" font-weight="800" font-family="Consolas, Menlo, monospace">05 // GROW</text>
+<text x="110" y="557" fill="#d3ddea" font-size="16" font-weight="400" text-anchor="start" font-family="Segoe UI, Ubuntu, Arial, sans-serif">
+    <tspan x="110" dy="0">Growing through collaboration, new challenges, and</tspan>
+    <tspan x="110" dy="21">continuous learning</tspan>
+  </text>
+
+</svg>

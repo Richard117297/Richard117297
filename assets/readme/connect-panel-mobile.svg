@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="430" viewBox="0 0 600 430" role="img" aria-labelledby="title description">
+  <title id="title">Connect with Richard</title>
+  <desc id="description">Connect through GitHub, LinkedIn, Gmail, Instagram, and Facebook.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050914" />
+      <stop offset="54%" stop-color="#081421" />
+      <stop offset="100%" stop-color="#102238" />
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="48%" stop-color="#2dd4bf" />
+      <stop offset="78%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.11" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#27415e" stroke-width="1" opacity="0.34" />
+    </pattern>
+    <clipPath id="frameClip"><rect width="600" height="430" rx="20" /></clipPath>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="430" rx="20" fill="url(#background)" />
+  <rect x="1" y="1" width="598" height="428" rx="19" fill="none" stroke="#345778" stroke-width="2" />
+  <rect x="1" y="1" width="598" height="428" rx="19" fill="url(#grid)" opacity="0.18" />
+  <rect x="28" y="24" width="544" height="382" rx="17" fill="#060d17" fill-opacity="0.64" stroke="#2f648b" stroke-width="1.4" />
+  <rect x="29" y="25" width="542" height="380" rx="16" fill="none" stroke="#2dd4bf" stroke-opacity="0.22" />
+  <g clip-path="url(#frameClip)">
+    <rect x="0" y="-69" width="600" height="69" fill="url(#scan)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 499" dur="12s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <rect x="28" y="403" width="544" height="3" rx="1.5" fill="url(#edge)" opacity="0.5" />
+  <circle cx="52" cy="56" r="4.5" fill="#2dd4bf" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <text x="68" y="62" fill="#2dd4bf" font-size="16" font-weight="800" font-family="Consolas, Menlo, monospace">CONNECT // AVAILABLE</text>
+  <text x="52" y="88" fill="#8fa3ba" font-size="13" font-family="Consolas, Menlo, monospace">richard@portfolio:~$ open contacts</text>
+  <text x="548" y="62" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">5 CHANNELS // READY</text>
+  <line x1="52" y1="105" x2="548" y2="105" stroke="#315474" stroke-width="1" />
+  <line x1="52" y1="105" x2="210" y2="105" stroke="url(#edge)" stroke-width="2" />
+  <rect x="50" y="128" width="238" height="70" rx="12" fill="#0b1726" stroke="#f0f6fc" stroke-opacity="0.42" />
+  <circle cx="82" cy="163" r="16" fill="#07111f" stroke="#f0f6fc" />
+  <text x="82" y="168" fill="#f0f6fc" font-size="11" font-weight="800" text-anchor="middle" font-family="Consolas, Menlo, monospace">GH</text>
+  <text x="110" y="168" fill="#f0f6fc" font-size="17" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">GitHub</text>
+  <rect x="312" y="128" width="238" height="70" rx="12" fill="#0b1726" stroke="#60a5fa" stroke-opacity="0.42" />
+  <circle cx="344" cy="163" r="16" fill="#07111f" stroke="#60a5fa" />
+  <text x="344" y="168" fill="#60a5fa" font-size="11" font-weight="800" text-anchor="middle" font-family="Consolas, Menlo, monospace">IN</text>
+  <text x="372" y="168" fill="#f0f6fc" font-size="17" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">LinkedIn</text>
+  <rect x="50" y="216" width="238" height="70" rx="12" fill="#0b1726" stroke="#f87171" stroke-opacity="0.42" />
+  <circle cx="82" cy="251" r="16" fill="#07111f" stroke="#f87171" />
+  <text x="82" y="256" fill="#f87171" font-size="11" font-weight="800" text-anchor="middle" font-family="Consolas, Menlo, monospace">GM</text>
+  <text x="110" y="256" fill="#f0f6fc" font-size="17" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Gmail</text>
+  <rect x="312" y="216" width="238" height="70" rx="12" fill="#0b1726" stroke="#c084fc" stroke-opacity="0.42" />
+  <circle cx="344" cy="251" r="16" fill="#07111f" stroke="#c084fc" />
+  <text x="344" y="256" fill="#c084fc" font-size="11" font-weight="800" text-anchor="middle" font-family="Consolas, Menlo, monospace">IG</text>
+  <text x="372" y="256" fill="#f0f6fc" font-size="17" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Instagram</text>
+  <rect x="50" y="304" width="500" height="70" rx="12" fill="#0b1726" stroke="#38bdf8" stroke-opacity="0.42" />
+  <circle cx="82" cy="339" r="16" fill="#07111f" stroke="#38bdf8" />
+  <text x="82" y="344" fill="#38bdf8" font-size="11" font-weight="800" text-anchor="middle" font-family="Consolas, Menlo, monospace">FB</text>
+  <text x="110" y="344" fill="#f0f6fc" font-size="17" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Facebook</text>
+
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title description">
+  <title id="title">Featured projects list</title>
+  <desc id="description">Five projects: StaffTrain, Hegemony Linear, UPB Educational Credit Simulator, Ruta 7 Ríos Tourism Platform, Veterinary Management System.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050914" />
+      <stop offset="54%" stop-color="#081421" />
+      <stop offset="100%" stop-color="#102238" />
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="48%" stop-color="#2dd4bf" />
+      <stop offset="78%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.11" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#27415e" stroke-width="1" opacity="0.34" />
+    </pattern>
+    <clipPath id="frameClip"><rect width="1200" height="430" rx="20" /></clipPath>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="430" rx="20" fill="url(#background)" />
+  <rect x="1" y="1" width="1198" height="428" rx="19" fill="none" stroke="#345778" stroke-width="2" />
+  <rect x="1" y="1" width="1198" height="428" rx="19" fill="url(#grid)" opacity="0.18" />
+  <rect x="28" y="24" width="1144" height="382" rx="17" fill="#060d17" fill-opacity="0.64" stroke="#2f648b" stroke-width="1.4" />
+  <rect x="29" y="25" width="1142" height="380" rx="16" fill="none" stroke="#8b5cf6" stroke-opacity="0.22" />
+  <g clip-path="url(#frameClip)">
+    <rect x="0" y="-69" width="1200" height="69" fill="url(#scan)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 499" dur="12s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <rect x="28" y="403" width="1144" height="3" rx="1.5" fill="url(#edge)" opacity="0.5" />
+  <circle cx="52" cy="56" r="4.5" fill="#8b5cf6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <text x="68" y="62" fill="#8b5cf6" font-size="16" font-weight="800" font-family="Consolas, Menlo, monospace">PROJECTS.LIST</text>
+  <text x="52" y="88" fill="#8fa3ba" font-size="13" font-family="Consolas, Menlo, monospace">richard@portfolio:~$ ./projects.sh --all</text>
+  <text x="1148" y="62" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">5 PROJECTS // LOADED</text>
+  <line x1="52" y1="105" x2="1148" y2="105" stroke="#315474" stroke-width="1" />
+  <line x1="52" y1="105" x2="210" y2="105" stroke="url(#edge)" stroke-width="2" />
+  <rect x="52" y="121" width="1095" height="42" rx="9" fill="#0b1726" stroke="#22d3ee" stroke-opacity="0.3" />
+  <circle cx="75" cy="142" r="6" fill="#22d3ee">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <text x="96" y="148" fill="#22d3ee" font-size="15" font-weight="800" font-family="Consolas, Menlo, monospace">[01]</text>
+  <text x="152" y="148" fill="#f0f6fc" font-size="17" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">StaffTrain</text>
+  <text x="1122" y="148" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">project.stafftrain</text>
+  <rect x="52" y="173" width="1095" height="42" rx="9" fill="#0b1726" stroke="#2dd4bf" stroke-opacity="0.3" />
+  <circle cx="75" cy="194" r="6" fill="#2dd4bf">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.4s" repeatCount="indefinite" />
+  </circle>
+  <text x="96" y="200" fill="#2dd4bf" font-size="15" font-weight="800" font-family="Consolas, Menlo, monospace">[02]</text>
+  <text x="152" y="200" fill="#f0f6fc" font-size="17" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Hegemony Linear</text>
+  <text x="1122" y="200" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">project.hegemony-linear</text>
+  <rect x="52" y="225" width="1095" height="42" rx="9" fill="#0b1726" stroke="#3b82f6" stroke-opacity="0.3" />
+  <circle cx="75" cy="246" r="6" fill="#3b82f6">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.8s" repeatCount="indefinite" />
+  </circle>
+  <text x="96" y="252" fill="#3b82f6" font-size="15" font-weight="800" font-family="Consolas, Menlo, monospace">[03]</text>
+  <text x="152" y="252" fill="#f0f6fc" font-size="17" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">UPB Educational Credit Simulator</text>
+  <text x="1122" y="252" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">project.upb-credit-simulator</text>
+  <rect x="52" y="277" width="1095" height="42" rx="9" fill="#0b1726" stroke="#8b5cf6" stroke-opacity="0.3" />
+  <circle cx="75" cy="298" r="6" fill="#8b5cf6">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="4.2s" repeatCount="indefinite" />
+  </circle>
+  <text x="96" y="304" fill="#8b5cf6" font-size="15" font-weight="800" font-family="Consolas, Menlo, monospace">[04]</text>
+  <text x="152" y="304" fill="#f0f6fc" font-size="17" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Ruta 7 Ríos Tourism Platform</text>
+  <text x="1122" y="304" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">project.ruta-7-rios</text>
+  <rect x="52" y="329" width="1095" height="42" rx="9" fill="#0b1726" stroke="#34d399" stroke-opacity="0.3" />
+  <circle cx="75" cy="350" r="6" fill="#34d399">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="4.6s" repeatCount="indefinite" />
+  </circle>
+  <text x="96" y="356" fill="#34d399" font-size="15" font-weight="800" font-family="Consolas, Menlo, monospace">[05]</text>
+  <text x="152" y="356" fill="#f0f6fc" font-size="17" font-weight="700" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Veterinary Management System</text>
+  <text x="1122" y="356" fill="#5f7590" font-size="12" text-anchor="end" font-family="Consolas, Menlo, monospace">project.veterinary-management</text>
+
+</svg>
