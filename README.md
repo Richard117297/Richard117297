@@ -267,9 +267,9 @@ Veterinary Management System — I contributed to the development of an academic
 </p>
 
 <p align="center">
-  <img src="./assets/generated/stats.svg?v=62d294a9262d" width="49%" alt="GitHub stats" />
-  <img src="./assets/generated/detailed-stats.svg?v=62d294a9262d" width="49%" alt="Detailed GitHub stats" /><br>
-  <img src="./assets/generated/top-langs.svg?v=62d294a9262d" width="49%" alt="Top languages" />
+  <img src="./assets/generated/stats.svg?v=60a461d7f25b" width="49%" alt="GitHub stats" />
+  <img src="./assets/generated/detailed-stats.svg?v=60a461d7f25b" width="49%" alt="Detailed GitHub stats" /><br>
+  <img src="./assets/generated/top-langs.svg?v=60a461d7f25b" width="49%" alt="Top languages" />
   <img src="https://streak-stats.demolab.com?user=Richard117297&amp;theme=tokyonight&amp;hide_border=true&amp;card_width=495&amp;card_height=230&amp;disable_animations=true" width="49%" alt="GitHub streak" />
 </p>
 
